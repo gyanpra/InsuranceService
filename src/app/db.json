@@ -1,0 +1,60 @@
+{
+  "insurance": [
+    {
+      "id": 1,
+      "policyHoldersName": "Gyan",
+      "policyAmount": 100000,
+      "amountForEmi": 10000,
+      "nomineesName": "Richa"
+    },
+    {
+      "id": 2,
+      "policyHoldersName": "Charan",
+      "policyAmount": 500000,
+      "amountForEmi": 50,
+      "nomineesName": "Manikant"
+    },
+    {
+      "id": 3,
+      "policyHoldersName": "Avijit",
+      "policyAmount": 120000,
+      "amountForEmi": 12000,
+      "nomineesName": "Rahul"
+    },
+    {
+      "policyHoldersName": "Gyan121",
+      "policyAmount": 10000013424,
+      "amountForEmi": 10000,
+      "nomineesName": "Richa123",
+      "id": 4
+    },
+    {
+      "id": 6,
+      "policyHoldersName": "xyza",
+      "policyAmount": 111,
+      "amountForEmi": 111,
+      "nomineesName": "avc"
+    },
+    {
+      "id": 8,
+      "policyHoldersName": "Gyan",
+      "policyAmount": 100000,
+      "amountForEmi": 10000,
+      "nomineesName": "Richa22"
+    },
+    {
+      "id": 9,
+      "policyHoldersName": "Gyan121",
+      "policyAmount": 10000013424,
+      "amountForEmi": 10000,
+      "nomineesName": "Richa"
+    },
+    {
+      "id": 10,
+      "policyHoldersName": "Rahul",
+      "policyAmount": 1111,
+      "amountForEmi": 11,
+      "nomineesName": "Unknown"
+    }
+  ]
+}
