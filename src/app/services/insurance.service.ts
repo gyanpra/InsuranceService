@@ -11,6 +11,7 @@ export class InsuranceService {
 
   constructor(private http: HttpClient) { }
   baseUrl = 'http://localhost:3000/insurance';
+  
 
   get(){
     return this.http.get<any>(this.baseUrl).pipe(map((res:any)=>{
@@ -21,6 +22,12 @@ export class InsuranceService {
   // get(id: string): Observable<Insurance> {
   //   return this.http.get<any>(this.baseUrl + '/' + id);
   // }
+
+  getInsuranceOnId(productId:number){
+    return this.http.get<any>(this.baseUrl + '/' + productId).pipe(map((res:any)=>{
+      return res;
+      }));
+  }
 
   post(data:any){
     return this.http.post(this.baseUrl, data).pipe(map((res:any)=>{
@@ -38,6 +45,13 @@ export class InsuranceService {
       return res;
       })); 
   }
+
+  register(data:any){
+    return this.http.post(this.baseUrl + '/register', data).pipe(map((res:any)=>{
+      return res;
+      }));
+  }
+  
 
 
 }

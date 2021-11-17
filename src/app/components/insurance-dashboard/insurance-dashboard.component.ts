@@ -1,17 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Insurance } from 'src/app/models/insurance';
 import { InsuranceService } from 'src/app/services/insurance.service';
 import { LoggerService } from 'src/app/services/logger.service';
 
-type NewType = Insurance[];
 
 @Component({
   selector: 'app-insurance-dashboard',
   templateUrl: './insurance-dashboard.component.html',
   styleUrls: ['./insurance-dashboard.component.css']
 })
+
 export class InsuranceDashboardComponent implements OnInit {
+
+  username="";
+  searchUser="";
+
+  SortByParam = '';
+  SortDirection = 'asc';
 
   formValue !: FormGroup;
   insuranceModelObject: Insurance = new Insurance();
@@ -36,6 +42,7 @@ export class InsuranceDashboardComponent implements OnInit {
     this.showAdd = true;
     this.showUpdate = false;
   }
+
 
 
 
@@ -100,9 +107,23 @@ export class InsuranceDashboardComponent implements OnInit {
       this.getInsuranceData();
     });
 
+  }
 
+  searchPolicyHolder() {
+    this.searchUser=this.username;
+  }
 
+  clearPolicyHolder() {
+    this.searchUser="";
+    this.username="";
+  }
 
+  onSortDirection() {
+    if (this.SortDirection === 'desc') {
+      this.SortDirection = 'asc';
+    } else {
+      this.SortDirection = 'desc';
+    }
   }
 
 

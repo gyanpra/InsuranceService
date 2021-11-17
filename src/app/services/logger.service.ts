@@ -4,8 +4,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LoggerService {
+  
 
   constructor() { }
+
+
 
   log(msg:any){
     let msgForLog = new Date() + " "+ msg;

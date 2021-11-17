@@ -29,13 +29,6 @@
       "id": 4
     },
     {
-      "id": 6,
-      "policyHoldersName": "xyza",
-      "policyAmount": 111,
-      "amountForEmi": 111,
-      "nomineesName": "avc"
-    },
-    {
       "id": 8,
       "policyHoldersName": "Gyan",
       "policyAmount": 100000,
@@ -55,6 +48,22 @@
       "policyAmount": 1111,
       "amountForEmi": 11,
       "nomineesName": "Unknown"
+    },
+    {
+      "id": 11,
+      "policyHoldersName": "keshav Goyal",
+      "policyAmount": 10000,
+      "amountForEmi": 1000,
+      "nomineesName": "Gyan"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullName": "gyan",
+      "email": "gyanp008@gmail.com",
+      "password": "123456",
+      "mobile": 123456789,
+      "id": 1
     }
   ]
 }

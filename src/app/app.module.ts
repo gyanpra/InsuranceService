@@ -9,6 +9,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import { InsuranceDashboardComponent } from './components/insurance-dashboard/insurance-dashboard.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { SortPipe } from './pipes/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +21,11 @@ import { InsuranceDashboardComponent } from './components/insurance-dashboard/in
     NavComponent,
     FooterComponent,
     InsuranceDashboardComponent,
+    LoginComponent,
+    SignupComponent,
+    FilterComponent,
+    FilterPipe,
+    SortPipe,
   ],
   imports: [
     BrowserModule,
